@@ -16,6 +16,7 @@ body{
 .select {
 	width: 280px;
 	position: relative;
+	display: grid;
 }
 
 
