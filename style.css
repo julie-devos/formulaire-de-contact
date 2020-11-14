@@ -13,11 +13,17 @@ body{
 	padding-left: 50px;
 }
 
+.select {
+	width: 280px;
+	position: relative;
+}
+
+
 .sexe label{
 	font-family: 'Dancing Script', cursive;
 	font-size: 25px;
 	font-weight: bold;
-	font-weight: bold;
+	width: 150px;
 }
 
 .sexe{
@@ -26,15 +32,24 @@ body{
 	width: 500px;
 }
 
+.hobbies{
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+	width: 300px;
+
+	display: inline-block;
+}
+
+.hobbies label{
+	font-family: 'Dancing Script', cursive;
+	font-size: 25px;
+	font-weight: bold;
+	width: 150px;
+	display: block;
+}
+
 .birthday{
 	width: 500px;
-}
-.container {
-  position: relative;
-  padding-left: 2px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px
 }
 
 
