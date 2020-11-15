@@ -58,7 +58,7 @@ body{
 .login-box{
 	width: 280px;
 	position: absolute;
-	top: 41%;
+	top: 42%;
 	left: 79%;
 	transform: translate(-50%, -50%);
 	color: white;
@@ -83,7 +83,7 @@ body{
 	background: none;
 	color: white;
 	font-size: 18px;
-	width: 100px;
+	width: 150px;
 	float: left;
 	margin: 0 10px;
 	

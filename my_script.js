@@ -1,25 +1,46 @@
-let form = document.querySelector('#myform');
+const validEmail = function(emailEvent) 
+{
+    // Get DOM element for event
+    let emailInput = emailEvent.target
 
-form.email.addEventListener('change', function() {
-	validEmail(this);
-});
+    // Define regexp for email checking
+    let regexMail = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/
 
-const validEmail = function(inputEmail){
-	let emailRegExp = new RegExp(
-		'^[a-zA-Z0-9.-_]+[@]{1}[a-zA-Z0-9.-_]+{1}[a-z]{2,10}$', 'g'
-		);
-	
-	let small = inputEmail.nextElementSibling;
+    // Get DOM element for displaying email hint
+    let hintText = emailInput.nextElementSibling;
 
-	if (emailRegExp.test(inputEmail.value)) {
-		small.ennerHTML ='Adresse valide';
-		small.classList.remove('text-danger');
-		small.classList.add('text-success');
-	}
-	else{
-		small.ennerHTML ='Adresse invalide';
-		small.classList.remove('text-success');
-		small.classList.add('text-danger');
-	}
-
+    if (regexMail.test(emailInput.value)) {
+        hintText.innerHTML = 'Adresse valide';
+        hintText.classList.remove('text-danger');
+        hintText.classList.add('text-success');
+    } else {
+        hintText.innerHTML = 'Adresse invalide';
+        hintText.classList.remove('text-success');
+        hintText.classList.add('text-danger');
+    }
 };
+
+
+const submitForm = function(event)
+{
+    event.preventDefault();
+    Swal.fire({
+        title: 'Formulaire envoyé !',
+        width: 400,
+        padding: '3em',
+        background: '#fff url(img/valide.jpg) no-repeat',
+        backdrop: 
+        `
+            rgba(0,0,123,0.4)
+            url("img/Up.gif")
+            left top
+            no-repeat
+          `
+      });
+}
+
+
+$('#email').change(validEmail);
+
+
+$("#myform").submit(submitForm);
