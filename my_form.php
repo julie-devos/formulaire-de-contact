@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
 
 	<meta charset="utf-8">
 
-
 	<title>Formulaire de contact</title>
 
-	<link rel="stylesheet" href="my_style.css">
-
-	<link rel="javascript" type="text/javascript" href="my_script.js">
+	<link rel="stylesheet" href="style.css">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> 
@@ -19,7 +16,6 @@
 </head>
 
 <body>
-	<form method="POST" id="myform">
 
 	<div class="login-box">
 
@@ -34,13 +30,13 @@
 		</div>
 
 		<div class="sexe">
-			<label>Sexe : <br> </label>
+			<label>Sexe : <br></label>
 				  <input type="radio" checked="checked" name="radio" > Homme
 				  <span class="checkmark"></span>
-				<label>
+				</label>
 				  <input type="radio" name="radio"> Femme
 				  <span class="checkmark"></span>
-				</label><label>
+				</label>
 				  <input type="radio" name="radio"> Autre
 				  <span class="checkmark"></span>
 				</label>
@@ -49,64 +45,58 @@
 
 		<div class="text-box">
 			<i class="far fa-user-circle"></i>
-			<label><input type="text" placeholder="Nom" name="Nom" minlength="2" maxlength="20" required></label><label><input type="text" placeholder="Prénom" minlength="2" maxlength="17" name="Prénom" required></label>
+			<input type="text" placeholder="Nom" name="" minlength="2" maxlength="20" value=""><label><input type="text" placeholder="Prénom" minlength="2" maxlength="17" name="" value="" required></label>
 
 		</div>
 
 		<div class="birthday">
 			<i class="fas fa-birthday-cake"></i>
-			<input type="date" name="birthday">
+			<input type="date" name="">
 		</div>
 
 		<div class="text-box">
 			<i class="fas fa-phone-alt"></i>
-			<label>
-			<input type="tel" placeholder="Téléphone" id="phone" name="Téléphone" value="" pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" required></label>
+			<input type="tel" placeholder="Téléphone" id="phone" name="" value="" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required>
 			
 		</div>
 
 		<div class="text-box">
 			<i class="fas fa-at"></i>
-			<label>
-			<input type="email" placeholder="email" id="email" name="email" value="" ></label>
-			<small></small>
+			<input type="email" placeholder="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="" value="" required>
+			
 			
 		</div>
 
 		<div class="text-box">
 			<i class="fab fa-internet-explorer"></i>
-			<label>
-			<input type="url" placeholder="site internet" id="url" name="site internet" value=""></label>
+			<input type="url" placeholder="site internet" id="url" pattern="https://.*" name="" value="" required>
 			
 			
 		</div>
 
 		<div class="hobbies">
 			<label>Hobbies : <br></label>
-				<label>
 				  <input type="checkbox" checked="checked" name="radio" > Jeux Vidéos
-				  <span class="checkmark"></span></label>
-				<label>
+				  <span class="checkmark"></span>
+				</label>
 				  <input type="checkbox" name="radio"> Cinéma
 				  <span class="checkmark"></span>
-				</label><label>
+				</label>
 				  <input type="checkbox" name="radio"> Lecture
-				  <span class="checkmark"></span></label>
-				<label>
+				  <span class="checkmark"></span>
+				</label>
 				<input type="checkbox" name="radio"> Sport
 				  <span class="checkmark"></span>
-				</label><label>
+				</label>
 				<input type="checkbox" name="radio"> Informatique
 				  <span class="checkmark"></span>
 				</label>
 			
 		</div>
 
-		<label><input class="btn" type="submit" name="btn" value="Validation"></label>
+		<input class="btn" type="submit" name="" value="Validation">
 			
 		</div>
-	</form>	
 
-	<script src="my_script.js"></script>
 </body>
 </html>
