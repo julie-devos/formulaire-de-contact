@@ -32,8 +32,8 @@ const submitForm = function(event)
         backdrop: 
         `
             rgba(0,0,123,0.4)
-            url("img/Up.gif")
-            left top
+            url("img/dog-up.gif")
+            top center
             no-repeat
           `
       });
