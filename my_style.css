@@ -1,13 +1,12 @@
 body{
 	margin: 0;
 	padding: 0;
-	font-family: 'Dancing Script', cursive;
 	font-size: 30px;
 	background: url(img/fond.jpg) no-repeat;
 	background-size: cover;
 }
 .login-box h1{
-	font-family: 'Dancing Script', cursive;
+	font-family:'Dancing Script', cursive;
 	font-size: 50px;
 	font-weight: bold;
 	padding-left: 50px;
@@ -22,7 +21,7 @@ body{
 
 
 .sexe label{
-	font-family: cursive;
+	font-family:'Dancing Script', cursive;
 	font-size: 20px;
 	font-weight: bold;
 	width: 150px;
@@ -30,7 +29,7 @@ body{
 }
 
 .sexe{
-	font-family: cursive;
+	font-family: 'Dancing Script',cursive;
 	font-size: 20px;
 	font-weight: bold;
 	width: 500px;
@@ -43,7 +42,7 @@ body{
 }
 
 .hobbies label{
-	font-family: cursive;
+	font-family: 'Dancing Script',cursive;
 	font-size: 20px;
 	font-weight: bold;
 	width: 150px;
@@ -88,6 +87,11 @@ body{
 	margin: 0 10px;
 	
 }
+.text-box small{
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
 .btn{
 	width: 100%;
 	background-image: url(img/ballon.png);

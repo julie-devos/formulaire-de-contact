@@ -13,7 +13,8 @@ const validEmail = function(emailEvent)
         hintText.innerHTML = 'Adresse valide';
         hintText.classList.remove('text-danger');
         hintText.classList.add('text-success');
-    } else {
+    } 
+    else {
         hintText.innerHTML = 'Adresse invalide';
         hintText.classList.remove('text-success');
         hintText.classList.add('text-danger');
@@ -42,5 +43,6 @@ const submitForm = function(event)
 
 $('#email').change(validEmail);
 
+$('#Téléphone').change(validTel);
 
 $("#myform").submit(submitForm);
